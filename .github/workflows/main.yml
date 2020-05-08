@@ -31,5 +31,4 @@ jobs:
         pip install wheel
         pip install jovian --upgrade
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        ls
-        pwd
+        python "import jovian; jovian.commit(message='first commit',files=['Basic Python.ipynb'])"
